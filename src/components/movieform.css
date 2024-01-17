@@ -1,0 +1,171 @@
+.create_movie_title {
+  color: white;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 37px;
+  word-wrap: break-word;
+  width: 870px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titlefiled {
+  width: 362px;
+  padding: 10px 10px 10px 30px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: none;
+  background: var(--input-color, #224957);
+  color: white;
+}
+.titlefiled::placeholder {
+  color: #fff;
+}
+.titlefiled:focus {
+  outline: none;
+}
+.yearfiled {
+  width: 216px;
+  padding: 10px 10px 10px 30px;
+  border: none;
+  color: #fff;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--input-color, #224957);
+}
+.yearfiled::placeholder {
+  color: #fff;
+}
+.yearfiled:focus {
+  outline: none;
+}
+.dragfile {
+  width: 473px;
+  height: 504px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px dashed #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--input-color, #224957);
+}
+.dragefiletext {
+  color: #fff;
+
+  text-align: center;
+  /* Body/small */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.canclebutton {
+  display: flex;
+  width: 167px;
+  height: 56px;
+  padding: 16px 55px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.submitbutton {
+  display: flex;
+  width: 179px;
+  height: 55px;
+  padding: 15.714px 59px 15.286px 58px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--primary, #2bd17e);
+}
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 100px;
+  justify-content: space-evenly;
+}
+.formfiled {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttondiv {
+  display: flex;
+  gap: 10px;
+}
+.mainfileddiv {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptybutton {
+  border-radius: 10px;
+  background: var(--primary, #2bd17e);
+  display: inline-flex;
+  padding: 16px 28px;
+  align-items: flex-start;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Styles for language selection buttons */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.language-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  /* Additional styles for hover effect */
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+@media (max-width: 768px) {
+  .create_movie_title {
+    font-size: 36px;
+  }
+  .form {
+    grid-template-columns: auto;
+  }
+
+  .titlefiled {
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  .yearfiled {
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  .form {
+    flex-direction: column; /* Stack fields on top of each other */
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .mainfileddiv {
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+}

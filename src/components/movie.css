@@ -1,0 +1,171 @@
+/* Existing styles for larger screens */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination li a:hover {
+  background-color: #eee;
+  color: black !important;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: black !important;
+}
+
+.card {
+  display: inline-flex;
+  height: auto;
+  padding: 8px 8px 0px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  background: var(--Card-color, #092c39);
+  backdrop-filter: blur(100px);
+  width: 266px;
+}
+
+.language-dropdown {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Optional: Style the dropdown arrow */
+.language-dropdown::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Optional: Style the options in the dropdown */
+.language-dropdown option {
+  padding: 8px;
+}
+
+.cardimage {
+  width: 266px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.cardmanin {
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 40px;
+}
+.mainemptydiv {
+  display: flex;
+  width: 1440px;
+  padding-top: 324px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+#jj {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  justify-content: space-between;
+  padding: 1% 18%;
+}
+
+.movie-title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.movie-year {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cardmanin {
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 857px) {
+  .cardmanin {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    margin-top: 10px;
+  }
+
+  .pagination li a {
+    padding: 6px 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .cardimage {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardmanin {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+
+  #jj {
+    padding: 1% 5%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .movie-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .movie-year {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

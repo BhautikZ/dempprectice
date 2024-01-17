@@ -1,0 +1,80 @@
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 84vh;
+  position: relative;
+}
+
+#tb1 {
+  background-color: #224957;
+  padding: 17px;
+  margin: 22px;
+  width: 20rem;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+#tb1::placeholder {
+  color: white;
+}
+
+#tb1:focus {
+  outline: none;
+}
+
+#tb2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+  font-size: small;
+}
+
+.error {
+  color: rgb(251, 85, 85);
+  margin-left: 25px;
+  margin-top: -18px;
+  font-size: small;
+  max-width: 376px;
+}
+
+.lbtn {
+  margin: 20px;
+  background-color: #2bd17e;
+  color: white;
+  width: 22rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.password-input-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.noaccountdiv {
+  margin: 27px;
+}
+.noaccountdiv.noaccountdivp {
+  color: "white";
+  font-size: "small";
+}
+.noaccountspan {
+  text-decoration: "underline";
+  cursor: "pointer";
+}

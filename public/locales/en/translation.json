@@ -1,0 +1,37 @@
+{
+  "signin": "Sign in",
+  "email": "Email",
+  "remail": "Email is required",
+  "notvalidemail": "Email is not valid",
+  "rpassword": "Password is required",
+  "notvalidpassword": "Password must be at least 8 characters and include a combination of uppercase, lowercase, numbers, and special characters.",
+  "password": "Password",
+  "rememberMe": "Remember Me",
+  "loginSuccess": "Login success",
+  "noAccount": "Don't have an account?",
+  "signUpHere": "Sign up here",
+  "loginButton": "Login",
+
+  "my_movie": "My movie",
+  "logout": "Logout",
+  "previous": "Previous",
+  "next": "Next",
+  "empty_movie_list": "Your movie list is empty",
+  "addmovie": "Add movie",
+
+  "create_a_new_movie": "Create a new movie",
+  "edit": "Edit",
+  "title": "Title",
+  "publish_year": "Publish Year",
+  "update": "Update",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "select_or_drag_file": "Select or drag file",
+
+  "movie_image_required": "Movie image is required",
+  "file_size_limit": "Upload only 1 MB file",
+  "title_required": "Title is required",
+  "publish_year_required": "Publish year is required",
+  "publish_year_format": "Year must be a 4-digit number",
+  "image_format_restrict": "Upload only .jpeg, .png, .jpg files"
+}
